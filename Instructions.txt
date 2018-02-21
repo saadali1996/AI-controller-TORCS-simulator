@@ -1,0 +1,19 @@
+snakeoil.py and clien.py are credited to x_ched ,used for collecting the training data for our Intelligent Bot.
+
+Scr client trained is the controller implemented with our algorithms to play on the simulator.
+
+AiProject.ipynb contains the code for data preprocessing and cleaning.
+->Total data rows 136000 collected from almost all tracks.
+->79 features in X.csv(input features)
+->7 output values in Y.csv 
+->it also contains the code for training random forest multi output random forrest classifier with no of estimators on each node=5 and randomness set to 1.
+->test.ipynb contains code for speed optimization of the predict function.
+->AI project .ipynb also contains code for training a 3layer fully ocnnected nueral network with 79 i nout dimension and 7 output dimension,non linearity used is RELU,to avoid vanishing gradient.
+->Random forrest regressor provides accuracy of 97 persent, whereas the nueral network provides accuracy of 92 percent.
+->But the forward pass ie the predict call is faster in the nueral network.
+->Can switch between the nueral netwrok and the random forrest,but random forrest overall chossen for test environment.
+->Mimimum purity of nodes is set to 85 percent.
+
+Weight Files
+->MultiOutputRegressor4.pkl is the saved random forrest model as a pickle file.
+->AI.h5 contains the network architecture and weigjhts for the nueral network.
